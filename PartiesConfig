@@ -1,0 +1,35 @@
+  exp-system:
+    enable: true
+    levels:
+      enable: false
+      mode: fixed
+      progressive:
+        level-start: 100
+        level-multiplier: "*2"
+      fixed:
+        - 100
+        - 500
+        - 1000
+      custom:
+        formula: "2 + (Math.log(%total_exp%/100) / Math.log(2))"
+    exp-drop:
+      enable: true
+      sharing:
+        enable: true
+        if-more-than: 1
+        range: 100
+        divide-formula: "%exp% / %number_players%"
+      exp-to-get:
+        normal: true
+        skillapi: true
+      convert-exp-into:
+        normal: skillapi
+        skillapi: skillapi
+        remove-real-exp: true
+      addons:
+        skillapi:
+          enable: true
+          exp-source: "MOB"
+        mythicmobs:
+          enable: true
+          handle-only-mm-mobs: true
