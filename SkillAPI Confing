@@ -1,0 +1,16 @@
+Experience: 
+
+  use-exp-orbs: 'false'
+  block-mob-spawner: 'true'
+  block-mob-egg: 'true'
+  block-creative: 'true'
+  exp-message-enabled: 'false'
+  level-message-enabled: 'true'
+  lose-exp-message: 'true'
+  formula: 
+    x: '1'
+    y: '8'
+    z: '16'
+    
+  use-custom: 'true'
+  custom-formula: '72*((lvl + 5)*(lvl + 5)) + 1*lvl + 1'
